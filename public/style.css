@@ -1,14 +1,52 @@
 *{
+    box-sizing: border-box;
+}
+
+html,body {
+
+    height: 100%;
     margin: 0;
     padding: 0;
-}
-body, html {
 
-    width: 100%;
-    height: 100%;
 }
 
 canvas{
-
-    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
+
+.colors {
+    position: fixed;
+  }
+  
+.color{
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    margin: 3px;
+ }
+
+ 
+.pincel{
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    margin: 3px;
+
+ }
+
+.color.black { background-color: black; }
+.color.red { background-color: red; }
+.color.green { background-color: green; }
+.color.blue { background-color: blue; }
+.color.yellow { background-color: yellow; }
+.color.white { background-image: url("./imagenes/borrador.png");background-color: white;}
+.pincel.pincel1 { background-image: url("./imagenes/pincel1.png");}
+.pincel.pincel2 { background-image: url("./imagenes/pincel2.png");}
